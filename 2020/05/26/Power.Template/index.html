@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Vrinan">
+
+
+    <meta name="subtitle" content="最后存活着的房门被敲">
+
+
+    <meta name="description" content="最后存活着的房门被敲">
+
+
+
+<title>Power.Template | 最后存活着的房门被敲</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <!-- <script type="text/javascript" src="//raw.githubusercontent.com/alroy233/alroy233.github.io/master/scriptAl/canvas-nest.min.js"></script> -->
+    <div class="wrapper">
+        <header>
+    <!-- alroy -->
+    <script type="text/javascript">
+        WIDGET = { FID: 'JAnPUETnam' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Power.Template</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Vrinan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 26, 2020&nbsp;&nbsp;17:28:24</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Power/">Power</a>
+                            
+                        </span>
+                    
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=468490600&auto=1&height=32"></iframe>
+                </div>
+            
+        </header>
+        <div class="post-content">
+            <h3 id="配置文件（窗体、表单）"><a href="#配置文件（窗体、表单）" class="headerlink" title="配置文件（窗体、表单）"></a>配置文件（窗体、表单）</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//窗体</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"config"</span>: &#123;</span><br><span class="line">        <span class="attr">"openformid"</span>: <span class="string">"4f689b2b-b518-4a6d-b8c3-0ec98f04cf38"</span>,</span><br><span class="line">        <span class="attr">"opentype"</span>: <span class="string">"div"</span>,</span><br><span class="line">        <span class="attr">"openwidth"</span>: <span class="string">"1200"</span>,</span><br><span class="line">        <span class="attr">"openheight"</span>: <span class="string">"600"</span>,</span><br><span class="line">        <span class="attr">"joindata"</span>: &#123;</span><br><span class="line">            <span class="attr">"KeyWord"</span>: <span class="string">"XLX_PS_BID_Inquiry"</span>,</span><br><span class="line">            <span class="attr">"KeyWordType"</span>: <span class="string">"ViewEntity"</span>,</span><br><span class="line">            <span class="attr">"filter"</span>: &#123;</span><br><span class="line">                <span class="attr">"InquiryType"</span>: <span class="string">"0"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">"swhere"</span>: <span class="string">"RegHumId='[@HumanId]' or '[@HumanId]'='B08DC04F-3D4E-4B9D-923D-8D09B9D1C6BD' or '[@HumanId]'='ad000000-0000-0000-0000-000000000000'"</span>,</span><br><span class="line">            <span class="attr">"sort"</span>: <span class="string">"Sequ desc"</span>,</span><br><span class="line">            <span class="attr">"children"</span>: []</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"PS_SubContract.Status"</span>: &#123;</span><br><span class="line">        <span class="attr">"ComponentType"</span>: <span class="string">"ComboBox"</span>,</span><br><span class="line">        <span class="attr">"SourceType"</span>: <span class="string">"basedata"</span>,</span><br><span class="line">        <span class="attr">"Source"</span>: <span class="string">"PS_ContractStatus"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//表单</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"config"</span>: &#123;</span><br><span class="line">        <span class="attr">"joindata"</span>: &#123;</span><br><span class="line">            <span class="attr">"KeyWord"</span>: <span class="string">"PS_SubContract"</span>,</span><br><span class="line">            <span class="attr">"children"</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">"KeyWord"</span>: <span class="string">"PS_SubContractSettlement"</span>,</span><br><span class="line">                    <span class="attr">"fields"</span>: &#123;</span><br><span class="line">                        <span class="attr">"SubContract_Guid"</span>: <span class="string">"Id"</span></span><br><span class="line">                    &#125;,</span><br><span class="line">                    <span class="attr">"children"</span>: [ ]</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">"KeyWord"</span>: <span class="string">"View_ArrivalMatInStore"</span>,</span><br><span class="line">                    <span class="attr">"KeyWordType"</span>: <span class="string">"ViewEntity"</span>,</span><br><span class="line">                    <span class="attr">"fields"</span>: &#123;</span><br><span class="line">                        <span class="attr">"Contract_Guid"</span>: <span class="string">"Id"</span></span><br><span class="line">                    &#125;,</span><br><span class="line">                    <span class="attr">"children"</span>: [ ]</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"Organize.RoleType"</span>: &#123;</span><br><span class="line">        <span class="attr">"ComponentType"</span>: <span class="string">"ComboBox"</span>,</span><br><span class="line">        <span class="attr">"SourceType"</span>: <span class="string">"sql"</span>,</span><br><span class="line">        <span class="attr">"Source"</span>: <span class="string">"select a.Code,a.Name from PB_BaseDataList a inner join PB_BaseData b on a.BaseDataId=b.Id inner join PB_DefaultField c on b.Id=c.DefaultFieldId where b.DataType='BD_OrganizeType' and a.Code&lt;&gt;'6' and c.EpsProjId='[@EpsProjId]' order by a.Sequ"</span>,</span><br><span class="line">        <span class="attr">"textField"</span>: <span class="string">"Name"</span>,</span><br><span class="line">        <span class="attr">"valueField"</span>: <span class="string">"Code"</span></span><br><span class="line">    &#125;,</span><br><span class="line"><span class="attr">"PS_SubContract.SubContractCode"</span>: &#123;</span><br><span class="line">        <span class="attr">"ComponentID"</span>: <span class="string">"65962b4b-e8b5-e8b1-ea27-f3b45a35bb67"</span>,</span><br><span class="line">        <span class="attr">"ComponentName"</span>: <span class="string">"请选择进项合同评审"</span>,</span><br><span class="line">        <span class="attr">"ComponentType"</span>: <span class="string">"wizard"</span>,</span><br><span class="line">        <span class="attr">"multi"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"filter"</span>: <span class="string">" EpsProjId = '[@EpsProjId]' and Status=50 and IsChosen=0"</span>,</span><br><span class="line">        <span class="attr">"fields"</span>: &#123;</span><br><span class="line">            <span class="attr">"EPSProjectId"</span>: <span class="string">"EPSProjectId"</span>,</span><br><span class="line">            <span class="attr">"EPSProjectName"</span>: <span class="string">"EPSProjectName"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"distinct"</span>: [</span><br><span class="line">            <span class="string">"HumanId"</span></span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="向导-combobox（主-子表）"><a href="#向导-combobox（主-子表）" class="headerlink" title="向导/combobox（主/子表）"></a>向导/combobox（主/子表）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">PS_ContractStatus</span><br><span class="line"><span class="comment">&lt;!-- 主表 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"PS_SubContractPayment.SubContractApplyCode"</span> <span class="attr">name</span>=<span class="string">"SubContractApplyCode"</span> <span class="attr">textname</span>=<span class="string">"SubContractApplyCode"</span> <span class="attr">class</span>=<span class="string">"mini-buttonedit"</span> <span class="attr">emptytext</span>=<span class="string">"请选择付款申请..."</span> <span class="attr">onbuttonclick</span>=<span class="string">"PowerForm.OnBtnWizard(this,true)"</span> <span class="attr">required</span>=<span class="string">"true"</span> <span class="attr">allowinput</span>=<span class="string">"false"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 子表grid --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"CostCode"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span> <span class="attr">width</span>=<span class="string">"130"</span>&gt;</span>对应成本编号</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">id</span>=<span class="string">"SF_DrawingBudget_dtl.CostCode"</span> <span class="attr">class</span>=<span class="string">"mini-buttonedit"</span> <span class="attr">name</span>=<span class="string">"CostCode"</span> <span class="attr">textname</span>=<span class="string">"CostCode"</span> <span class="attr">onbuttonclick</span>=<span class="string">"PowerForm.OnBtnWizard(this,true)"</span> <span class="attr">allowinput</span>=<span class="string">"false"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"DangerType"</span> <span class="attr">type</span>=<span class="string">"comboboxcolumn"</span> <span class="attr">allowsort</span>=<span class="string">"true"</span>&gt;</span>危险类别</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-combobox"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="单选-复选的Html（主-子表）"><a href="#单选-复选的Html（主-子表）" class="headerlink" title="单选/复选的Html（主/子表）"></a>单选/复选的Html（主/子表）</h3><!-- 单选 -->
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">type</span>=<span class="string">"radiobuttoncolumn"</span> <span class="attr">field</span>=<span class="string">"IsBid"</span> <span class="attr">truevalue</span>=<span class="string">"1"</span> <span class="attr">falsevalue</span>=<span class="string">"0"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span>是否中标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<!-- 复选 -->
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">td</span>&gt;</span>是否最新版<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"SF_FK_EquipmentCostSchedule.IsNew"</span> <span class="attr">name</span>=<span class="string">"IsNew"</span> <span class="attr">truevalue</span>=<span class="string">"1"</span> <span class="attr">falsevalue</span>=<span class="string">"0"</span> <span class="attr">class</span>=<span class="string">"mini-checkbox"</span> <span class="attr">text</span>=<span class="string">"是否最新版"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">type</span>=<span class="string">"checkboxcolumn"</span> <span class="attr">field</span>=<span class="string">"IsNew"</span> <span class="attr">truevalue</span>=<span class="string">"1"</span> <span class="attr">falsevalue</span>=<span class="string">"0"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span>是否最新版<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 1 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"Organize-Export"</span> <span class="attr">title</span>=<span class="string">"导出全部/本页"</span> <span class="attr">class</span>=<span class="string">"btn-group"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 2 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"mini-button blue"</span> <span class="attr">id</span>=<span class="string">"GEDI_Cont_Records_SubContract.Export"</span> <span class="attr">onclick</span>=<span class="string">"PowerForm.OnExportDataToXls('GEDI_Cont_Records_SubContract', '测试导出excel')"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-sign-out"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>原样导出<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 3合并列 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"mini-button blue"</span> <span class="attr">id</span>=<span class="string">"View_SF_EachWeekCheck.Export"</span> <span class="attr">onclick</span>=<span class="string">"PowerForm.AlExport('View_SF_EachWeekCheck', '导出合并列', 'RunStation,CheckType')"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-sign-out"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>导出<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="几种弹出框"><a href="#几种弹出框" class="headerlink" title="几种弹出框"></a>几种弹出框</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Power.ui.confirm(<span class="string">"合格数量不可以大于到货数量,是否自动修改？"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">ret</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (ret) &#123;</span><br><span class="line">            mini.get(row.ArrivalNum).setValue(<span class="built_in">parseFloat</span>(row.PassNum));</span><br><span class="line">            mini.get(row.UnPassNum).setValue(<span class="built_in">parseFloat</span>(<span class="number">0</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">Power.ui,warning(<span class="string">"123"</span>);</span><br><span class="line">Power.ui,loading(<span class="string">"123"</span>);</span><br><span class="line">Power.ui,loading.close();</span><br><span class="line">Power.ui,info(<span class="string">"123"</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="保存-刷新-关闭"><a href="#保存-刷新-关闭" class="headerlink" title="保存/刷新/关闭"></a>保存/刷新/关闭</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123; <span class="attr">id</span>: <span class="string">"PS_ContractBudget.Save"</span> &#125;;</span><br><span class="line">PowerForm.OnBtnSave(a);</span><br><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">id</span>: <span class="string">"XLX_PUR_InquiryOnline.Refresh"</span>&#125;;</span><br><span class="line">PowerForm.OnBtnRefresh(a);</span><br><span class="line"><span class="keyword">var</span> a = &#123; <span class="attr">id</span>: <span class="string">"PS_ContractBudget.CloseForm"</span> &#125;;</span><br><span class="line">PowerForm.OnBtnCloseForm(a);</span><br></pre></td></tr></table></figure>
+<p>###</p>
+<h3 id="grid取消所有行编辑"><a href="#grid取消所有行编辑" class="headerlink" title="grid取消所有行编辑"></a>grid取消所有行编辑</h3><p>gdMat.accept();<br>###</p>
+<h3 id="查看按钮"><a href="#查看按钮" class="headerlink" title="查看按钮"></a>查看按钮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a class&#x3D;&quot;mini-button blue&quot; id&#x3D;&quot;XLX_PUR_Inquiry.ViewIO&quot; onclick&#x3D;&quot;ViewFormComn(&#39;022765e2-b49b-4325-9fae-d8b77d9b5169&#39;,KeyValue)&quot;&gt;&lt;i class&#x3D;&quot;fa fa-eye&quot;&gt;&lt;&#x2F;i&gt;查看询价单&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+<p>###</p>
+<h3 id="表头合并的html"><a href="#表头合并的html" class="headerlink" title="表头合并的html"></a>表头合并的html</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">header</span>=<span class="string">"调节池出水"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">property</span>=<span class="string">"columns"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"A1"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            COD(mg/L)</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"A2"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            氨氮(mg/L)</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">header</span>=<span class="string">"UASB池出水"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">property</span>=<span class="string">"columns"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">header</span>=<span class="string">"1###"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">property</span>=<span class="string">"columns"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"B1"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">                    MLSS(mg/L)</span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"B2"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">                    氨氮(mg/L)</span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">header</span>=<span class="string">"2###"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">property</span>=<span class="string">"columns"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"B4"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">                    MLSS(mg/L)</span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">field</span>=<span class="string">"B6"</span> <span class="attr">headeralign</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">                    COD(mg/L)</span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">property</span>=<span class="string">"editor"</span> <span class="attr">class</span>=<span class="string">"mini-spinner"</span> <span class="attr">style</span>=<span class="string">"width: 100%;"</span> <span class="attr">minvalue</span>=<span class="string">"0"</span> <span class="attr">maxvalue</span>=<span class="string">"9999999999"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="栏位和过滤按钮"><a href="#栏位和过滤按钮" class="headerlink" title="栏位和过滤按钮"></a>栏位和过滤按钮</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"btn-group customcolumn"</span> gridid=<span class="string">"PowerTarget"</span>&gt;栏位&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="btn-group customfilter" gridid="PowerTarget"&gt;过滤&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="工具栏按钮"><a href="#工具栏按钮" class="headerlink" title="工具栏按钮"></a>工具栏按钮</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PowerForm.setQmenu("XLX_PUR_Supplie", "view,refresh,delete,edit");//工具按钮setQmenu</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<hr>
+<hr>
+<h3 id="流程状态字典"><a href="#流程状态字典" class="headerlink" title="流程状态字典"></a>流程状态字典</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">参数名称	参数类型	    参数说明</span><br><span class="line">Create	    <span class="number">0</span>	        初始起草状态(此时尚未选择工作流)</span><br><span class="line">Initial	    <span class="number">15</span>	        初始起草状态(创建),已经绑定了工作流，但未执行过发送</span><br><span class="line">Flowing	    <span class="number">20</span>	        流转状态</span><br><span class="line">Hanguping	<span class="number">30</span>	        挂起等候状态</span><br><span class="line">IsSign	    <span class="number">35</span>	        已生效</span><br><span class="line">Stop	    <span class="number">40</span>	        终止状态</span><br><span class="line">Finish	    <span class="number">50</span>	        完成状态</span><br><span class="line">None	    <span class="number">100</span>	        默认空状态</span><br></pre></td></tr></table></figure>
+
+
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Power/"># Power</a>
+                    
+                        <a href="/tags/Html/"># Html</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/05/26/Power.Session/">Power.Session/Webconfig</a>
+            
+            
+            <a class="next" rel="next" href="/2020/05/26/Power.Unusual/">Power.Unusual</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <!-- <span>© Vrinan|Powered by Hexo</span> -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">x<span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">s<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

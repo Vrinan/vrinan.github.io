@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Vrinan">
+
+
+    <meta name="subtitle" content="最后存活着的房门被敲">
+
+
+    <meta name="description" content="最后存活着的房门被敲">
+
+
+
+<title>Tech.Net | 最后存活着的房门被敲</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <!-- <script type="text/javascript" src="//raw.githubusercontent.com/alroy233/alroy233.github.io/master/scriptAl/canvas-nest.min.js"></script> -->
+    <div class="wrapper">
+        <header>
+    <!-- alroy -->
+    <script type="text/javascript">
+        WIDGET = { FID: 'JAnPUETnam' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Tech.Net</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Vrinan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 26, 2020&nbsp;&nbsp;17:28:24</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Tech/">Tech</a>
+                            
+                        </span>
+                    
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=468490600&auto=1&height=32"></iframe>
+                </div>
+            
+        </header>
+        <div class="post-content">
+            <h3 id="NET"><a href="#NET" class="headerlink" title=".NET"></a>.NET</h3><h4 id="wdl转换为cs类（vs开发控制台）"><a href="#wdl转换为cs类（vs开发控制台）" class="headerlink" title="wdl转换为cs类（vs开发控制台）"></a>wdl转换为cs类（vs开发控制台）</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsdl /language:c# /n:Demo /out:d:/LegalAffairs.cs http://xxxx:<span class="number">8080</span>/services/YHService?Wsdl</span><br></pre></td></tr></table></figure>
+
+<h4 id="json转换"><a href="#json转换" class="headerlink" title="json转换"></a>json转换</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">using Newtonsoft.Json;</span><br><span class="line">using Newtonsoft.Json.Linq;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;测试代码</span><br><span class="line">#region begin</span><br><span class="line">ViewResultModel vr &#x3D; new ViewResultModel();</span><br><span class="line">vr.data.Add(&quot;msg&quot;, &quot;成功&quot;);</span><br><span class="line">vr.data.Add(&quot;code&quot;, &quot;0&quot;);</span><br><span class="line">Hashtable hs &#x3D; new Hashtable();</span><br><span class="line">hs.Add(&quot;companyCode&quot;, &quot;COM_SHPH&quot;);</span><br><span class="line">hs.Add(&quot;companyDuty&quot;, &quot;开发&quot;);</span><br><span class="line">hs.Add(&quot;companyFullName&quot;, &quot;上海普华科技发展股份有限公司&quot;);</span><br><span class="line">hs.Add(&quot;companyName&quot;, &quot;上海普华&quot;);  </span><br><span class="line">hs.Add(&quot;duty&quot;, &quot;开发测试&quot;);</span><br><span class="line">vr.data.Add(&quot;data&quot;, hs);</span><br><span class="line">&#x2F;&#x2F;返回值</span><br><span class="line">string s &#x3D; JsonConvert.SerializeObject(vr.data);</span><br><span class="line">&#x2F;&#x2F;转hashtable</span><br><span class="line">Hashtable ht &#x3D; JsonConvert.DeserializeObject&lt;Hashtable&gt;(s);</span><br><span class="line">&#x2F;&#x2F;转data内容</span><br><span class="line">Hashtable htr &#x3D; JsonConvert.DeserializeObject&lt;Hashtable&gt;(JsonConvert.SerializeObject(ht[&quot;data&quot;]));</span><br><span class="line">ViewResultModel result &#x3D; JsonConvert.DeserializeObject&lt;ViewResultModel&gt;(s);</span><br><span class="line">return &quot;&quot;;</span><br><span class="line">#endregion</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 对象转化json字符串</span><br><span class="line">JObject jo &#x3D; (JObject)JsonConvert.DeserializeObject(jsonText);</span><br><span class="line">Newtonsoft.Json.JsonConvert.SerializeObject()cc                                                         </span><br><span class="line">&#x2F;&#x2F; json字符串转化为指定对象</span><br><span class="line"> Newtonsoft.Json.JsonConvert.DeserializeObject&lt;&gt;()</span><br><span class="line">&#x2F;&#x2F; json字符串直接获取指定元素值（类似XML）</span><br><span class="line">var jObject&#x3D;JObject.Parse(jsonstring);</span><br><span class="line">var time&#x3D; jObject[&quot;time&quot;].ToString();&#x2F;&#x2F;获取time&#123;&quot;time&quot;:&quot;2016-06-06 11:11:11&quot;&#125;</span><br><span class="line">&#x2F;&#x2F; xml转换json字符串</span><br><span class="line">XmlDocument doc &#x3D; new XmlDocument();  </span><br><span class="line">doc.LoadXml(PostBackXml);</span><br><span class="line">var jObject &#x3D; Newtonsoft.Json.JsonConvert.SerializeXmlNode(doc);&#x2F;&#x2F;Xml转json</span><br><span class="line">&#x2F;&#x2F; 当上面的XML在序列化是通常会出现根目录，根目录内出现的才是需要序列化的对象元素。</span><br><span class="line">&#x2F;&#x2F; 不妨先转换为JObject，像下面这样使用jobj[&quot;MongoTask&quot;]转换</span><br><span class="line"> var json&#x3D;JsonConvert.SerializeXmlNode(item);</span><br><span class="line"> var jobj &#x3D; JsonConvert.DeserializeObject&lt;JObject&gt;(json);</span><br><span class="line"> tasklist.Add(jobj[&quot;MongoTask&quot;].ToObject&lt;MongoTask&gt;());</span><br><span class="line"> 如果需要获取XML中属性的值，比如获取&lt;user name&#x3D;&#39;张三&#39;&gt;获取张三时name属相带有@符号</span><br><span class="line">代码中过滤到@符号就可以正常取值</span><br><span class="line">var jobj &#x3D; Newtonsoft.Json.JsonConvert.DeserializeObject&lt;JObject&gt;(jObject.Replace(&quot;@&quot;,&quot;&quot;));</span><br><span class="line">var name&#x3D; jobj[&quot;Response&quot;][&quot;Body&quot;][&quot;OrderResponse&quot;][&quot;name&quot;];</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><h4 id="string字符串转为数组"><a href="#string字符串转为数组" class="headerlink" title="string字符串转为数组"></a>string字符串转为数组</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string[] a &#x3D; Convert.ToString(ibb[&quot;SignHumanIds&quot;]).Trim().Split(&#39;,&#39;);</span><br></pre></td></tr></table></figure>
+<h4 id="replace替换"><a href="#replace替换" class="headerlink" title="replace替换"></a>replace替换</h4><h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><h4 id="sql连接型"><a href="#sql连接型" class="headerlink" title="sql连接型"></a>sql连接型</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;&#x2F; &lt;summary&gt;</span><br><span class="line">&#x2F;&#x2F;&#x2F; 查询合同主表</span><br><span class="line">&#x2F;&#x2F;&#x2F; &lt;&#x2F;summary&gt;</span><br><span class="line">&#x2F;&#x2F;&#x2F; &lt;param name&#x3D;&quot;swhere&quot;&gt;查询条件&lt;&#x2F;param&gt;</span><br><span class="line">&#x2F;&#x2F;&#x2F; &lt;param name&#x3D;&quot;order&quot;&gt;排序方式&lt;&#x2F;param&gt;</span><br><span class="line">&#x2F;&#x2F;&#x2F; &lt;returns&gt;&lt;&#x2F;returns&gt;</span><br><span class="line">[ActionAttribute(Authorize &#x3D; false)]</span><br><span class="line">public string ContractPay(string swhere, string order)</span><br><span class="line">&#123;</span><br><span class="line">    ViewResultModel result &#x3D; ViewResultModel.Create(true, &quot;&quot;);</span><br><span class="line">    &#x2F;&#x2F;解码HttpUtility</span><br><span class="line">    swhere &#x3D; HttpUtility.UrlDecode(swhere);</span><br><span class="line">    order &#x3D; HttpUtility.UrlDecode(order);</span><br><span class="line">    &#x2F;&#x2F;删除特殊字符</span><br><span class="line">    swhere &#x3D; swhere.Replace(&quot;drop&quot;, &quot;&quot;).Replace(&quot;delete&quot;, &quot;&quot;).Replace(&quot;sysdatabases&quot;, &quot;&quot;).Replace(&quot;sysobjects&quot;, &quot;&quot;);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;调用的数据的视图需要虚拟登录</span><br><span class="line">    &#x2F;&#x2F;虚拟登录</span><br><span class="line">    DataTable dtTemp &#x3D; Power.Systems.StdSystem.UserDO.FindAllByTable(&quot;Code&#x3D;&#39;admin&#39;&quot;, &quot;Code&quot;, &quot;Code,PassWord&quot;, 0, 1);</span><br><span class="line">    string pass &#x3D; dtTemp.Rows[0][&quot;PassWord&quot;] &#x3D;&#x3D; DBNull.Value ? &quot;&quot; : dtTemp.Rows[0][&quot;PassWord&quot;].ToString();</span><br><span class="line">    Power.Controls.Action.ILoginAction loginAct &#x3D; new Power.Controls.Action.LoginAction();</span><br><span class="line">    loginAct.Login(&quot;admin&quot;, pass, &quot;zh-CN&quot;);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;&#x2F;&#x2F;查询视图</span><br><span class="line">    Power.Business.ViewEntity.IViewEntity viewOperate &#x3D; Power.Business.ViewEntity.ViewEntityFactory.CreateViewEntity(&quot;&quot;);</span><br><span class="line">    viewOperate._SetSession(this.session);</span><br><span class="line">    result.list &#x3D; viewOperate.LoadDataList(swhere, order, 0, 0);</span><br><span class="line">    return result.ToJson();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Stream-IO文件处理"><a href="#Stream-IO文件处理" class="headerlink" title="Stream IO文件处理"></a>Stream IO文件处理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">FileStream fileStreams &#x3D; new FileStream(@&quot;E:\Test\test.txt&quot;, FileMode.Open);</span><br><span class="line">byte[] byts &#x3D; new byte[fileStreams.Length];</span><br><span class="line">fileStreams.Read(byts, 0, byts.Length);</span><br><span class="line">string base64Strs &#x3D; Convert.ToBase64String(byts);</span><br></pre></td></tr></table></figure>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Net/"># .Net</a>
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/05/26/Tech.Html/">Tech.Html</a>
+            
+            
+            <a class="next" rel="next" href="/2020/05/26/Tech.SqlServer/">Tech.SqlServer</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <!-- <span>© Vrinan|Powered by Hexo</span> -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">x<span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">s<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

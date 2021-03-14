@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Vrinan">
+
+
+    <meta name="subtitle" content="最后存活着的房门被敲">
+
+
+    <meta name="description" content="最后存活着的房门被敲">
+
+
+
+<title>Power.MiniUI | 最后存活着的房门被敲</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <!-- <script type="text/javascript" src="//raw.githubusercontent.com/alroy233/alroy233.github.io/master/scriptAl/canvas-nest.min.js"></script> -->
+    <div class="wrapper">
+        <header>
+    <!-- alroy -->
+    <script type="text/javascript">
+        WIDGET = { FID: 'JAnPUETnam' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Power.MiniUI</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Vrinan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 26, 2020&nbsp;&nbsp;17:28:24</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Power/">Power</a>
+                            
+                        </span>
+                    
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=468490600&auto=1&height=32"></iframe>
+                </div>
+            
+        </header>
+        <div class="post-content">
+            <h3 id="Temple"><a href="#Temple" class="headerlink" title="Temple"></a>Temple</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> PowerForm = <span class="keyword">new</span> WebForm();</span><br><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    PowerForm.Init();</span><br><span class="line">&#125;);</span><br><span class="line">mini.parse();</span><br><span class="line"><span class="comment">/********************************************开始：变量定义********************************************/</span></span><br><span class="line"><span class="keyword">var</span> currow = <span class="literal">null</span>; <span class="comment">//当前表单数据</span></span><br><span class="line"><span class="keyword">var</span> oldcurrow = <span class="literal">null</span>;<span class="comment">//表单原始数据</span></span><br><span class="line"><span class="keyword">var</span> epsProjName = mini.get(<span class="string">"ZDelta_CM_Contract.EpsProjName"</span>);<span class="comment">//项目名称</span></span><br><span class="line"><span class="keyword">var</span> partyAHumanName = mini.get(<span class="string">"ZDelta_CM_Contract.PartyAHumanName"</span>);<span class="comment">//甲方签署人</span></span><br><span class="line"><span class="keyword">var</span> dtlGrid = mini.get(<span class="string">"ZDelta_CM_ContractDtl"</span>);<span class="comment">//合同明细</span></span><br><span class="line"><span class="comment">/********************************************结束：变量定义********************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/********************************************开始：平台事件重写********************************************/</span></span><br><span class="line">PowerForm.EventAfterFormLoad = <span class="function"><span class="keyword">function</span> (<span class="params">e, data</span>) </span>&#123;</span><br><span class="line">    currow = formconfig.config.joindata.currow;</span><br><span class="line">    oldcurrow = formconfig.config.joindata.oldcurrow;</span><br><span class="line">    <span class="keyword">if</span> (FormState == <span class="string">'add'</span>) &#123;</span><br><span class="line">        epsProjName.setValue(sessiondata.EpsProjName);</span><br><span class="line">        partyAName.setValue(<span class="string">"广东粤海珠三角供水有限公司"</span>);</span><br><span class="line">        partyAName.setText(<span class="string">"广东粤海珠三角供水有限公司"</span>);</span><br><span class="line">        currow.OriginalRate = <span class="number">0.1</span>;</span><br><span class="line">        currow.CurrentRate = <span class="number">0.1</span>;</span><br><span class="line">        oldcurrow.OriginalRate = <span class="number">0.1</span>;</span><br><span class="line">        oldcurrow.CurrentRate = <span class="number">0.1</span>;</span><br><span class="line">        <span class="comment">// 或者直接delete</span></span><br><span class="line">        <span class="comment">// delete formconfig.config.joindata.oldcurrow;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/********************************************结束：平台事件重写********************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/********************************************开始：miniui拦截事件********************************************/</span></span><br><span class="line"><span class="comment">//向导点击关闭按钮触发</span></span><br><span class="line">partyAHumanName.on(<span class="string">"closeclick"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    partyAHumanName.setText(<span class="string">""</span>);</span><br><span class="line">    partyAHumanName.setValue(<span class="string">""</span>);</span><br><span class="line">    currow.partyAHumanName = <span class="string">""</span>;</span><br><span class="line">    currow.partyAHumanId = <span class="string">""</span>;</span><br><span class="line">&#125;);</span><br><span class="line">payNodeGrid.on(<span class="string">"cellcommitedit"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> record = e.record;</span><br><span class="line">    <span class="keyword">if</span>(e.field == <span class="string">"PayPercent"</span>)&#123;</span><br><span class="line">        e.value = e.value / <span class="number">100.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">/********************************************结束：miniui拦截事件********************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/********************************************开始：自定义事件********************************************/</span></span><br><span class="line"><span class="keyword">var</span> SetActiveDisplay = <span class="function"><span class="keyword">function</span>(<span class="params">value,type</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(value)&#123;</span><br><span class="line">        $(<span class="string">".ActiveDisplay_"</span> + type).show();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        $(<span class="string">".ActiveDisplay_"</span> + type).hide();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//点击查看工程量清单</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ViewContractBOQ</span>(<span class="params">formId,ContractId</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> params = <span class="string">"?ContractId="</span> + base64encode(currow.Id);</span><br><span class="line">    mini.open(&#123;</span><br><span class="line">        url: <span class="string">"/Form/ViewForm/"</span>+ formId +<span class="string">"/"</span>+ params, <span class="attr">width</span>: <span class="string">"80%"</span>, <span class="attr">height</span>: <span class="string">"80%"</span>, <span class="attr">showMaxButton</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/********************************************结束：自定义事件********************************************/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h3><h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//class="mini-spinner"</span></span><br><span class="line">    货币格式：format=<span class="string">"c"</span></span><br><span class="line">    table的千分位：format=<span class="string">"n2"</span></span><br><span class="line">    grid的千分位：NumberFormat=<span class="string">"n2"</span></span><br><span class="line">    百分比格式：format=<span class="string">"p"</span></span><br><span class="line">    自定义格式：format=<span class="string">"¥###,0.00"</span></span><br><span class="line">    increment 增量值 <span class="number">100</span></span><br><span class="line">    allowLimitValue 是否强制约束大小范围 <span class="literal">true</span></span><br><span class="line">    changeOnMousewheel 是否滚动滚轮改变值	<span class="literal">true</span> </span><br><span class="line">    decimalPlaces 保留的小数点位数	<span class="number">2</span>,<span class="literal">false</span></span><br><span class="line">    allowLoopValue	值增加到最大值时从最小值开始，反之亦然。<span class="literal">true</span>	</span><br><span class="line"><span class="comment">//class="mini-textbox"</span></span><br><span class="line">    allowCellWrap=<span class="string">"false"</span>  填充单元格 </span><br><span class="line">    allowNull 是否允许空值	<span class="literal">true</span></span><br><span class="line"><span class="comment">//class="mini-datepicker"</span></span><br><span class="line"><span class="comment">//class="mini-monthpicker"</span></span><br><span class="line">    format=<span class="string">"yyyy-MM-dd H:mm"</span></span><br><span class="line">    valueType=<span class="string">"string"</span> 字符型保存</span><br></pre></td></tr></table></figure>
+<h4 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="valuechanged"><a href="#valuechanged" class="headerlink" title="valuechanged"></a>valuechanged</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mini.get(<span class="string">"FileType"</span>).on(<span class="string">"valuechanged"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    mini.get(<span class="string">"View_LZ_FilesContent"</span>).reload();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid"><a href="#grid" class="headerlink" title="grid."></a>grid.</h3><h4 id="属性-1"><a href="#属性-1" class="headerlink" title="属性"></a>属性</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//汇总列</span></span><br><span class="line">showsummaryrow=<span class="string">"true"</span></span><br><span class="line">summarytype=<span class="string">"sum"</span><span class="comment">//列的div加</span></span><br><span class="line"><span class="comment">//排序</span></span><br><span class="line">sortField=<span class="string">"RegDate desc"</span></span><br><span class="line"><span class="comment">//列class="mini-spinner"百分比</span></span><br><span class="line">numberformat=<span class="string">"p2"</span></span><br></pre></td></tr></table></figure>
+<h4 id="事件-1"><a href="#事件-1" class="headerlink" title="事件"></a>事件</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//取消选中clearSelect</span></span><br><span class="line">grid.clearSelect(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//冻结,取消冻结</span></span><br><span class="line">PowerForm.Init();</span><br><span class="line">grid.frozenColumns(<span class="number">0</span>,<span class="number">4</span>);</span><br><span class="line">grid.unFrozenColumns();</span><br><span class="line"></span><br><span class="line"><span class="comment">//分组</span></span><br><span class="line">grid.groupBy(<span class="string">"Description"</span>, <span class="string">"ASC"</span>);</span><br><span class="line">grid.expandGroups();</span><br><span class="line">grid.collapseGroups();</span><br><span class="line"></span><br><span class="line"><span class="comment">//列的相同行合并</span></span><br><span class="line">onload=<span class="string">"onLoad"</span></span><br><span class="line">&lt;div name=<span class="string">"字段名"</span> field=<span class="string">"字段名"</span> headeralign=<span class="string">"center"</span>&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">OnBeforeLoad</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">    mini.get(<span class="string">"View_SF_SJ_Overview"</span>).mergeColumns([<span class="string">"xmbhCode"</span>,<span class="string">"sjcgTitle"</span>, <span class="string">"sjzjTitle"</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//findrow</span></span><br><span class="line"><span class="keyword">var</span> row = grid.findRow(<span class="function"><span class="keyword">function</span> (<span class="params">row</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (row.InvoiceAmount != <span class="string">""</span> || row.InvoiceAmount != <span class="literal">undefined</span> || row.InvoiceAmount != <span class="literal">null</span> || row.InvoiceAmount != <span class="number">0</span>) &#123;</span><br><span class="line">        sum += <span class="built_in">parseFloat</span>(row.InvoiceAmount);</span><br><span class="line">    &#125;</span><br><span class="line">    mini.get(<span class="string">"PS_SubContractApplyMoney.InvoiceCash"</span>).setValue(<span class="built_in">parseFloat</span>(sum));</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="drawcell"><a href="#drawcell" class="headerlink" title="drawcell"></a>drawcell</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">grid.on(<span class="string">"drawcell"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (e.cellHtml == <span class="string">"0.00"</span>) &#123;</span><br><span class="line">        e.cellHtml = <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (e.column.field == <span class="string">"RequestCode"</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!e.value) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">var</span> record = e.record;</span><br><span class="line">        <span class="keyword">var</span> sender = e.sender;</span><br><span class="line">        <span class="keyword">var</span> id = record.Request_Id;</span><br><span class="line">    e.cellHtml = <span class="string">"&lt;a href='javascript:;' onclick=\"OnViewForm('da063f7a-21b1-4e81-8992-6f2cfc614e02','"</span> + e.record.ID + <span class="string">"')\"&gt;"</span> + e.record.TaskName + <span class="string">"&lt;/a&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(record.IsChosen==<span class="number">1</span>)&#123;</span><br><span class="line">        e.rowStyle=<span class="string">"background:###00FA9A"</span>;</span><br><span class="line">        e.cellStyle = <span class="string">"background:###00FA9A;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="drawsummarycell"><a href="#drawsummarycell" class="headerlink" title="drawsummarycell"></a>drawsummarycell</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">grid.on(<span class="string">"drawsummarycell"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (e.field == <span class="string">"InContractAmount"</span> || e.field == <span class="string">"InvoiceAmount"</span> || e.field == <span class="string">"InApplyAmount"</span> || e.field == <span class="string">"InReceiveAmount"</span>) &#123;</span><br><span class="line">        e.cellStyle = <span class="string">"text-align:right;"</span></span><br><span class="line">        e.cellHtml = e.cellHtml.toFixed(<span class="number">2</span>).replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;)+\.)/g</span>, <span class="string">'$1,'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> (e.field == <span class="string">"Incount"</span> || e.field == <span class="string">"InvoiceCount"</span> || e.field == <span class="string">"InApplyCount"</span> || e.field == <span class="string">"InReceiveCount"</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        e.cellStyle = <span class="string">"text-align:right;"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(e.field ==<span class="string">"project_name"</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        e.cellHtml = <span class="string">"合计"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="cellbeginedit"><a href="#cellbeginedit" class="headerlink" title="cellbeginedit"></a>cellbeginedit</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">oncellbeginedit=<span class="string">"fun"</span></span><br><span class="line">grid.on(<span class="string">"cellbeginedit"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(e.field == <span class="string">"Code"</span> || e.field == <span class="string">"Name"</span> || e.field == <span class="string">"SubordinateUnit"</span>)&#123;</span><br><span class="line">        e.cancel = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="cellendedit"><a href="#cellendedit" class="headerlink" title="cellendedit"></a>cellendedit</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">dtlGrid.on(<span class="string">"cellendedit"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> record = e.record;</span><br><span class="line">    <span class="keyword">if</span>(e.field == <span class="string">"UnitPrice"</span> || e.field == <span class="string">"Quantity"</span> || e.field == <span class="string">"TaxRate"</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> amount = <span class="built_in">Number</span>(record.UnitPrice * record.Quantity).toFixed(<span class="number">2</span>);</span><br><span class="line">        <span class="keyword">var</span> excludeTaxAmount = (amount / (<span class="number">1</span> + <span class="built_in">Number</span>(record.TaxRate))).toFixed(<span class="number">2</span>);</span><br><span class="line">        <span class="keyword">var</span> excludeUnitPrice;</span><br><span class="line">        <span class="keyword">if</span>(record.Quantity==<span class="number">0</span>)</span><br><span class="line">            excludeUnitPrice = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            excludeUnitPrice = (excludeTaxAmount / record.Quantity);</span><br><span class="line">        dtlGrid.updateRow(record,&#123;<span class="string">"Amount"</span>:amount&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="ondrawgroup"><a href="#ondrawgroup" class="headerlink" title="ondrawgroup"></a>ondrawgroup</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ondrawgroup="onDrawGroup"</span></span><br><span class="line">grid.on(<span class="string">"ondrawgroup"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(e.field==<span class="string">"Description"</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        e.cellHtml = <span class="string">"&lt;span style='color:######008800;font-size:15px;'&gt;"</span> + e.value + <span class="string">"&lt;/span&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="rowclick"><a href="#rowclick" class="headerlink" title="rowclick"></a>rowclick</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grid.on(<span class="string">"rowclick"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    mini.get(<span class="string">"SF_SJ_EqupmentManagement_dtl"</span>).select(<span class="number">0</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="onnodedblclick"><a href="#onnodedblclick" class="headerlink" title="onnodedblclick"></a>onnodedblclick</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//onnodedblclick="ViewForm(e)" </span></span><br><span class="line">grid.on(<span class="string">"onnodedblclick"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    ViewForm(e);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="treeGrid"><a href="#treeGrid" class="headerlink" title="treeGrid."></a>treeGrid.</h3><h4 id="属性-2"><a href="#属性-2" class="headerlink" title="属性"></a>属性</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">expandonload=<span class="string">"0"</span><span class="comment">//默认展开第一层。treegrid的属性</span></span><br><span class="line">expandOnLoad=<span class="string">"false"</span><span class="comment">//不自动展开</span></span><br></pre></td></tr></table></figure>
+<h4 id="事件-2"><a href="#事件-2" class="headerlink" title="事件"></a>事件</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">treeGrid.expandAll();<span class="comment">//展开所有expandAll</span></span><br><span class="line">treeGrid.collapseAll();<span class="comment">//合并所有collapseAll</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义方法"><a href="#自定义方法" class="headerlink" title="自定义方法"></a>自定义方法</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">OnViewForm</span>(<span class="params">formid, keyvalue</span>) </span>&#123;</span><br><span class="line">    mini.open(&#123;</span><br><span class="line">        url: <span class="string">'/Form/EditForm/'</span> + formid + <span class="string">'/'</span> + keyvalue,</span><br><span class="line">        showMaxButton: <span class="literal">true</span>,</span><br><span class="line">        width: <span class="number">950</span>,</span><br><span class="line">        height: <span class="number">630</span>,</span><br><span class="line">        <span class="comment">//关闭时刷新原来窗体</span></span><br><span class="line">        ondestroy: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> a = &#123;&#125;;</span><br><span class="line">            a.id = <span class="string">"PB_ContractMilepost.Refresh"</span>;</span><br><span class="line">            PowerForm.OnBtnRefresh(a);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//全屏</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fullScreen</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> el = <span class="built_in">document</span>.documentElement;</span><br><span class="line">    <span class="keyword">var</span> rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//typeof rfs != "undefined" &amp;&amp; rfs</span></span><br><span class="line">    <span class="keyword">if</span> (rfs) &#123;</span><br><span class="line">        rfs.call(el);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">window</span>.ActiveXObject !== <span class="string">"undefined"</span>) &#123;</span><br><span class="line">        <span class="comment">//for IE，这里其实就是模拟了按下键盘的F11，使浏览器全屏</span></span><br><span class="line">        <span class="keyword">var</span> wscript = <span class="keyword">new</span> ActiveXObject(<span class="string">"WScript.Shell"</span>);</span><br><span class="line">        <span class="keyword">if</span> (wscript != <span class="literal">null</span>) &#123;</span><br><span class="line">            wscript.SendKeys(<span class="string">"&#123;F11&#125;"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Power/"># Power</a>
+                    
+                        <a href="/tags/MiniUI/"># MiniUI</a>
+                    
+                        <a href="/tags/JS/"># JS</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/05/26/Power.BackStage/">Power.BackStage</a>
+            
+            
+            <a class="next" rel="next" href="/2020/05/26/Power.PowerForm/">Power.PowerForm</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <!-- <span>© Vrinan|Powered by Hexo</span> -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">x<span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">s<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

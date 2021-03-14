@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Vrinan">
+
+
+    <meta name="subtitle" content="最后存活着的房门被敲">
+
+
+    <meta name="description" content="最后存活着的房门被敲">
+
+
+
+<title>Tech.Redis | 最后存活着的房门被敲</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <!-- <script type="text/javascript" src="//raw.githubusercontent.com/alroy233/alroy233.github.io/master/scriptAl/canvas-nest.min.js"></script> -->
+    <div class="wrapper">
+        <header>
+    <!-- alroy -->
+    <script type="text/javascript">
+        WIDGET = { FID: 'JAnPUETnam' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Tech.Redis</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Vrinan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 26, 2018&nbsp;&nbsp;17:28:24</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Tech/">Tech</a>
+                            
+                        </span>
+                    
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=468490600&auto=1&height=32"></iframe>
+                </div>
+            
+        </header>
+        <div class="post-content">
+            <h3 id="开启本地redis"><a href="#开启本地redis" class="headerlink" title="开启本地redis"></a>开启本地redis</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">e:</span></span><br><span class="line"><span class="function"><span class="title">cd</span> <span class="title">E</span>:\<span class="title">PowerPMS</span>\<span class="title">PowerPMS</span>\<span class="title">redis2</span>.8</span></span><br><span class="line"><span class="function"><span class="title">redis</span>-<span class="title">server</span> <span class="title">redis.windows.conf</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">heapdir：临时文件路径</span><br><span class="line">maxmemory：临时文件大小</span><br><span class="line">save：写到磁盘临时文件</span><br></pre></td></tr></table></figure>
+
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">redis-cli：客户端</span><br><span class="line">命令：keys *</span><br><span class="line">flushall</span><br></pre></td></tr></table></figure>
+
+<h3 id="改端口"><a href="#改端口" class="headerlink" title="改端口"></a>改端口</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、文件夹内三个配置文件，修改port xxxx（xxxx为数字）</span><br><span class="line"><span class="number">2</span>、PMS和Plat的Power.ConfigEdit.exe，参数</span><br><span class="line"><span class="number">3</span>、.bat的安装服务端口（注意卸载服务后要刷新，在执行添加服务的操作）</span><br></pre></td></tr></table></figure>
+
+<h3 id="快照持久化"><a href="#快照持久化" class="headerlink" title="快照持久化"></a>快照持久化</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cmd</span> 使用redis下的redis-server.exe 执行 redis.windows.conf</span><br><span class="line">执行<span class="built_in">cmd</span>到目录下：</span><br><span class="line"><span class="function">d:</span></span><br><span class="line"><span class="function"><span class="title">cd</span> 路径</span></span><br><span class="line"><span class="function">执行：</span></span><br><span class="line"><span class="function"><span class="title">redis</span>-<span class="title">server</span> <span class="title">redis.windows.conf</span></span></span><br><span class="line"><span class="function"><span class="title">cmd</span>执行：</span></span><br><span class="line"><span class="function"><span class="title">redis</span>-<span class="title">cli.exe</span> -<span class="title">h</span> 127.0.0.1 -<span class="title">p</span> 9500</span></span><br><span class="line"><span class="function">端口号见上一个<span class="title">redis</span>执行的结果</span></span><br><span class="line"><span class="function"><span class="title">auth</span> “<span class="title">xlx123456</span>”</span></span><br><span class="line"><span class="function">输入<span class="title">redis</span>密码</span></span><br><span class="line"><span class="function"><span class="title">config</span> <span class="title">set</span> <span class="title">stop</span>-<span class="title">writes</span>-<span class="title">on</span>-<span class="title">bgsave</span>-<span class="title">error</span>-<span class="title">no</span></span></span><br><span class="line"><span class="function">显示<span class="title">OK</span>成功</span></span><br></pre></td></tr></table></figure>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        <a href="/tags/Redis/"># Redis</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/05/26/Tech.Markdown/">Tech.Markdown</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <!-- <span>© Vrinan|Powered by Hexo</span> -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">x<span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">s<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

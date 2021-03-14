@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Vrinan">
+
+
+    <meta name="subtitle" content="最后存活着的房门被敲">
+
+
+    <meta name="description" content="最后存活着的房门被敲">
+
+
+
+<title>Tech.Markdown | 最后存活着的房门被敲</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <!-- <script type="text/javascript" src="//raw.githubusercontent.com/alroy233/alroy233.github.io/master/scriptAl/canvas-nest.min.js"></script> -->
+    <div class="wrapper">
+        <header>
+    <!-- alroy -->
+    <script type="text/javascript">
+        WIDGET = { FID: 'JAnPUETnam' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/"></a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/index">Home</a>
+                
+                <a class="menu-item" href="/categories">Categories</a>
+                
+                <a class="menu-item" href="/tags">Tags</a>
+                
+                <a class="menu-item" href="/Aimer">Nier</a>
+                
+                <a class="menu-item" href="/about">ひむら きせき</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Tech.Markdown</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Vrinan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 26, 2018&nbsp;&nbsp;17:28:24</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Tech/">Tech</a>
+                            
+                        </span>
+                    
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=468490600&auto=1&height=32"></iframe>
+                </div>
+            
+        </header>
+        <div class="post-content">
+            <h1 id="一级標題"><a href="#一级標題" class="headerlink" title="一级標題"></a>一级標題</h1><h2 id="二级標題"><a href="#二级標題" class="headerlink" title="二级標題"></a>二级標題</h2><p>段落以空白行分隔。</p>
+<p>行末兩個空格  産生斷行。</p>
+<p>文本屬性：_斜體_、<br><strong>粗體</strong>、<code>等寬字型Monospace</code>。</p>
+<p>水平線：</p>
+<hr>
+<p>列表：</p>
+<ul>
+<li>張三</li>
+<li>李四</li>
+<li>王二</li>
+</ul>
+<p>編號列表：</p>
+<ol>
+<li>不論</li>
+<li>三七</li>
+<li>二十一</li>
+</ol>
+<p><a href="http://example.com" target="_blank" rel="noopener">連結</a></p>
+<p><img src="Icon-pictures.png" alt="圖" title="icon"></p>
+<p><img src="buildWebsites.jpg" alt="avatar"><br>其中avatar表示图片未正常加载时所显示的内容，buildWebsites.jpg为文件名</p>
+<p>其子路径这样表示<br><img src="1/buildWebsites.jpg" alt="avatar"><br>其中1为文件夹名称</p>
+<p>其父路径用“..”表示，例如<br><img src="../buildWebsites.jpg" alt="avatar"></p>
+<blockquote>
+<p>Markdown使用電郵用字元「&gt;」來引用。</p>
+</blockquote>
+<p>行間<abbr title="Hypertext Markup Language">HTML</abbr>亦受支援。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span> <span class="attr">allowscriptaccess</span>=<span class="string">"always"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span> <span class="attr">wmode</span>=<span class="string">"transparent"</span> <span class="attr">quality</span>=<span class="string">"high"</span> <span class="attr">height</span>=<span class="string">"300"</span> <span class="attr">width</span>=<span class="string">"480"</span> <span class="attr">src</span>=<span class="string">"http://t.cn/A62QNONu?m=4512409076701415&amp;u=3910498847"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">height</span>=<span class="string">498</span> <span class="attr">width</span>=<span class="string">510</span> <span class="attr">src</span>=<span class="string">"http://t.cn/A62QNONu"</span> <span class="attr">frameborder</span>=<span class="string">0</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">'http://t.cn/A62QNONu?m=4512409076701415&amp;u=3910498847'</span> <span class="attr">type</span>=<span class="string">'video/mp4'</span> <span class="attr">controls</span>=<span class="string">'controls'</span>  <span class="attr">width</span>=<span class="string">'100%'</span> <span class="attr">height</span>=<span class="string">'100%'</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        <a href="/tags/Markdown/"># Markdown</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/06/29/Tech.Hexo/">Tech.Hexo</a>
+            
+            
+            <a class="next" rel="next" href="/2018/05/26/Tech.Redis/">Tech.Redis</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <!-- <span>© Vrinan|Powered by Hexo</span> -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">x<span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">s<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+</footer>
+    </div>
+</body>
+</html>
