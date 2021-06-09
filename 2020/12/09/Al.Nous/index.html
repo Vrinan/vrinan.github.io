@@ -122,6 +122,68 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
@@ -151,7 +213,14 @@
             
         </header>
         <div class="post-content">
-            <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">上海普华科技发展股份有限公司重庆分公司</span><br><span class="line"><span class="number">91500</span> <span class="number">105590</span> <span class="number">5297985</span> </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>、CAM（枪版）  </span><br><span class="line"><span class="number">2</span>、TS(准枪版)</span><br><span class="line"><span class="number">3</span>、TC(胶片版)  </span><br><span class="line"><span class="number">4</span>、DVDSCR(预售版)</span><br><span class="line"><span class="number">5</span>、R5（俄罗斯<span class="number">5</span>区版） </span><br><span class="line"><span class="number">7</span>、BD（蓝光版）</span><br><span class="line"><span class="number">8</span>、DVD,HDVD,DVD5,DVD9 DVD的英文全名是Digital Video Disk,即数字视频光盘或数字影盘,它利用MPEG2的压缩技术来储存影像。 </span><br><span class="line"><span class="number">9</span>、HDVD（压缩碟或者经济版DVD） HDVD俗称压缩碟或者经济版DVD</span><br><span class="line"><span class="number">10</span>、VHSRip VHSRip是从零售版VHS录象带转制，主要是滑冰/体育内容的发布。  </span><br><span class="line"><span class="number">11</span>、TVRip 从电视（最好是从数码有线电视/卫星电视捕捉）转制的电视剧，或接收由卫星提前几天向电视网传送的预播节目（不包含加密但有时有雪花）。</span><br><span class="line"><span class="number">12</span>、WORKPRINT (WP) WORKPRITN (WP)是从未完成的电影拷贝转制而成，可能会缺失镜头和音乐。</span><br><span class="line"><span class="number">13</span>、DivX Re-Enc DivXRe-Enc是从原始VCD发布用DivX编码成的小一些的文件。</span><br><span class="line"><span class="number">14</span>、Watermarks 很多从Asian Silvers/PDVD (参看下面)来的电影带有制作人的标记。</span><br><span class="line"><span class="number">15</span>、Asian Silvers / PDVD Asian Silvers / PDVD是亚洲盗版商发行影片的，通常被一些发布组织购买来当做他们自己的发布。</span><br><span class="line"><span class="number">16</span>、PROPER 根据发布规则，最先发布Telesync (TS)的组织赢得(TS发布的)比赛。</span><br><span class="line"><span class="number">17</span>、SUBBED 对于VCD发布而言，SUBBED通常表示字幕被压进了电影。</span><br><span class="line"> <span class="number">18</span>、UNSUBBED 当一部电影曾经发布过有字幕的SUBBED版本，没字幕的UNSUBBED版本也可能发布。 </span><br><span class="line"><span class="number">19</span>、LIMITED LIMITED电影指该电影只在有限的电影院放映，通常少于<span class="number">250</span>家。通常较小的电影（比如艺术电影）的发行是LIMETED。 </span><br><span class="line"><span class="number">20</span>、INTERNAL INTERNAL发布有几个原因。经典的DVD组织有很多.INTERNAL.发布版本，这样不会引起混淆。</span><br><span class="line"><span class="number">21</span>、STV STV表示电影从未在电影院放映过就被发布，因此很多望网站不允许STV。</span><br><span class="line"><span class="number">22</span>、ASPECT RATIO TAGS *ws*表示宽银幕，*FS*表示全屏幕。</span><br><span class="line"><span class="number">23</span>、RECODE RECODE是以前已经发布过的版本，通常用TMPGenc编码过滤以去除字幕，纠正颜色等。</span><br><span class="line"><span class="number">24</span>、REPACK 如果发布组织发布了一个坏的版本，他们会发布REPACK来解决这些问题。 <span class="number">25</span>、NUKED 一个发布可能因为多种原因被NUKE掉。有些网站会因为违犯他们的规则而NUKE发布(比如不允许发布TS版本)。</span><br><span class="line"></span><br><span class="line">release 最终释放版</span><br><span class="line">该版本意味“最终释放版”，在出了一系列的测试版之后，终归会有一个正式版本，对于用户而言，购买该版本的软件绝对不会错。</span><br><span class="line">registered 注册版</span><br><span class="line">很显然，该版本是与 unregistered 相对的注册版。注册版、release和下面所讲的standard版一样，都是软件的正式版本，只是注册版软件的前身有很大一部分是从网上下载的。</span><br><span class="line">standard 标准版</span><br><span class="line">这是最常见的标准版，不论是什么软件，标准版一定存在。标准版中包含了该软件的基本组件及一些常用功能，可以满足一般用户的需求。其价格相对高一级版本而言还是“平易近人”的。</span><br><span class="line">deluxe 豪华版</span><br><span class="line">顾名思义即为“豪华版”。豪华版通常是相对于标准版而言的，主要区别是多了几项功能，价格当然会高出一大块，不推荐一般用户购买。此版本通常是为那些追求“完美”的专业用户所准备的。</span><br><span class="line">reference</span><br><span class="line">该版本型号常见于百科全书中，比较有名的是微软的encarta系列。 reference是最高级别，其包含的主题、图像、影片剪辑等相对于standard和deluxe版均有大幅增加，容量由一张光盘猛增至三张光盘，并且加入了很强的交互功能，当然价格也不菲。可以这么说，这一版本的百科全书才能算是真正的百科全书，也是发烧友们收藏的首选。</span><br><span class="line">professional（专业版）</span><br><span class="line">专业版是针对某些特定的开发工具软件而言的。专业版中有许多内容是标准版中所没有的，这些内容对于一个专业的软件开发人员来说是极为重要的。如微软的visual foxpro标准版并不具备编译成可执行文件的功能，这对于一个完整的开发项目而言显然是无法忍受的，若客户机上没有foxpro将不能使用。如果用专业版就没有这个问题了。</span><br><span class="line">enterprise（企业版）</span><br><span class="line">企业版是开发类软件中的极品（相当于百科全书中的reference版）。拥有一套这种版本的软件可以毫无障碍地开发任何级别的应用软件。如著名的visual c++的企业版相对于专业版来说增加了几个附加的特性，如sql调试、扩展的存储过程向导、支持<span class="keyword">as</span>/<span class="number">400</span>对ole db的访问等。而这一版本的价格也是普通用户无法接受的。如微软的visual studios <span class="number">6.0</span> enterprise 中文版的价格为 <span class="number">23000</span> 元。</span><br><span class="line"></span><br><span class="line">CEO(Chief executive officer)首席执行官 类似总经理、总裁，是企业的法人代表。</span><br><span class="line">COO(Chief operating officer)首席运营官 类似常务总经理</span><br><span class="line">CFO(Chief financial officer)首席财务官 类似财务总经理</span><br><span class="line">CTO(Chief technology officer)首席技术官 类似总工程师</span><br><span class="line">CIO(Chief information officer)首席信息官 主管企业信息的收集和发布</span><br></pre></td></tr></table></figure>
+            <h3 id="Nous"><a href="#Nous" class="headerlink" title="Nous"></a>Nous</h3><p><em>“常识”</em></p>
+<h4 id="TaxNo"><a href="#TaxNo" class="headerlink" title="TaxNo"></a>TaxNo</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">上海普华科技发展股份有限公司重庆分公司</span><br><span class="line"><span class="number">915001055905297985</span> </span><br><span class="line">上海普华科技发展股份有限公司福州分公司</span><br><span class="line"><span class="number">91350100581109281B</span></span><br><span class="line">成都普华春天科技发展有限责任公司</span><br><span class="line"><span class="number">915101077978212510</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Audio-Video-Interactive"><a href="#Audio-Video-Interactive" class="headerlink" title="Audio Video Interactive"></a>Audio Video Interactive</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、CAM（枪版）  </span><br><span class="line"><span class="number">2</span>、TS(准枪版)</span><br><span class="line"><span class="number">3</span>、TC(胶片版)  </span><br><span class="line"><span class="number">4</span>、DVDSCR(预售版)</span><br><span class="line"><span class="number">5</span>、R5（俄罗斯<span class="number">5</span>区版） </span><br><span class="line"><span class="number">7</span>、BD（蓝光版）</span><br><span class="line"><span class="number">8</span>、DVD,HDVD,DVD5,DVD9 DVD的英文全名是Digital Video Disk,即数字视频光盘或数字影盘,它利用MPEG2的压缩技术来储存影像。 </span><br><span class="line"><span class="number">9</span>、HDVD（压缩碟或者经济版DVD） HDVD俗称压缩碟或者经济版DVD</span><br><span class="line"><span class="number">10</span>、VHSRip VHSRip是从零售版VHS录象带转制，主要是滑冰/体育内容的发布。  </span><br><span class="line"><span class="number">11</span>、TVRip 从电视（最好是从数码有线电视/卫星电视捕捉）转制的电视剧，或接收由卫星提前几天向电视网传送的预播节目（不包含加密但有时有雪花）。</span><br><span class="line"><span class="number">12</span>、WORKPRINT (WP) WORKPRITN (WP)是从未完成的电影拷贝转制而成，可能会缺失镜头和音乐。</span><br><span class="line"><span class="number">13</span>、DivX Re-Enc DivXRe-Enc是从原始VCD发布用DivX编码成的小一些的文件。</span><br><span class="line"><span class="number">14</span>、Watermarks 很多从Asian Silvers/PDVD (参看下面)来的电影带有制作人的标记。</span><br><span class="line"><span class="number">15</span>、Asian Silvers / PDVD Asian Silvers / PDVD是亚洲盗版商发行影片的，通常被一些发布组织购买来当做他们自己的发布。</span><br><span class="line"><span class="number">16</span>、PROPER 根据发布规则，最先发布Telesync (TS)的组织赢得(TS发布的)比赛。</span><br><span class="line"><span class="number">17</span>、SUBBED 对于VCD发布而言，SUBBED通常表示字幕被压进了电影。</span><br><span class="line"> <span class="number">18</span>、UNSUBBED 当一部电影曾经发布过有字幕的SUBBED版本，没字幕的UNSUBBED版本也可能发布。 </span><br><span class="line"><span class="number">19</span>、LIMITED LIMITED电影指该电影只在有限的电影院放映，通常少于<span class="number">250</span>家。通常较小的电影（比如艺术电影）的发行是LIMETED。 </span><br><span class="line"><span class="number">20</span>、INTERNAL INTERNAL发布有几个原因。经典的DVD组织有很多.INTERNAL.发布版本，这样不会引起混淆。</span><br><span class="line"><span class="number">21</span>、STV STV表示电影从未在电影院放映过就被发布，因此很多望网站不允许STV。</span><br><span class="line"><span class="number">22</span>、ASPECT RATIO TAGS *ws*表示宽银幕，*FS*表示全屏幕。</span><br><span class="line"><span class="number">23</span>、RECODE RECODE是以前已经发布过的版本，通常用TMPGenc编码过滤以去除字幕，纠正颜色等。</span><br><span class="line"><span class="number">24</span>、REPACK 如果发布组织发布了一个坏的版本，他们会发布REPACK来解决这些问题。 <span class="number">25</span>、NUKED 一个发布可能因为多种原因被NUKE掉。有些网站会因为违犯他们的规则而NUKE发布(比如不允许发布TS版本)。</span><br></pre></td></tr></table></figure>
+
+<h4 id="App-Version"><a href="#App-Version" class="headerlink" title="App Version"></a>App Version</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">release</span> 最终释放版</span><br><span class="line">该版本意味“最终释放版”，在出了一系列的测试版之后，终归会有一个正式版本，对于用户而言，购买该版本的软件绝对不会错。</span><br><span class="line">registered 注册版</span><br><span class="line">很显然，该版本是与 unregistered 相对的注册版。注册版、<span class="built_in">release</span>和下面所讲的standard版一样，都是软件的正式版本，只是注册版软件的前身有很大一部分是从网上下载的。</span><br><span class="line">standard 标准版</span><br><span class="line">这是最常见的标准版，不论是什么软件，标准版一定存在。标准版中包含了该软件的基本组件及一些常用功能，可以满足一般用户的需求。其价格相对高一级版本而言还是“平易近人”的。</span><br><span class="line">deluxe 豪华版</span><br><span class="line">顾名思义即为“豪华版”。豪华版通常是相对于标准版而言的，主要区别是多了几项功能，价格当然会高出一大块，不推荐一般用户购买。此版本通常是为那些追求“完美”的专业用户所准备的。</span><br><span class="line">reference</span><br><span class="line">该版本型号常见于百科全书中，比较有名的是微软的encarta系列。 reference是最高级别，其包含的主题、图像、影片剪辑等相对于standard和deluxe版均有大幅增加，容量由一张光盘猛增至三张光盘，并且加入了很强的交互功能，当然价格也不菲。可以这么说，这一版本的百科全书才能算是真正的百科全书，也是发烧友们收藏的首选。</span><br><span class="line">professional（专业版）</span><br><span class="line">专业版是针对某些特定的开发工具软件而言的。专业版中有许多内容是标准版中所没有的，这些内容对于一个专业的软件开发人员来说是极为重要的。如微软的visual foxpro标准版并不具备编译成可执行文件的功能，这对于一个完整的开发项目而言显然是无法忍受的，若客户机上没有foxpro将不能使用。如果用专业版就没有这个问题了。</span><br><span class="line">enterprise（企业版）</span><br><span class="line">企业版是开发类软件中的极品（相当于百科全书中的reference版）。拥有一套这种版本的软件可以毫无障碍地开发任何级别的应用软件。如著名的visual c++的企业版相对于专业版来说增加了几个附加的特性，如sql调试、扩展的存储过程向导、支持as/<span class="number">400</span>对ole db的访问等。而这一版本的价格也是普通用户无法接受的。如微软的visual studios <span class="number">6.0</span> enterprise 中文版的价格为 <span class="number">23000</span> 元。</span><br></pre></td></tr></table></figure>
+
+<h4 id="Duty"><a href="#Duty" class="headerlink" title="Duty"></a>Duty</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CEO(Chief executive officer)首席执行官 类似总经理、总裁，是企业的法人代表。</span><br><span class="line">COO(Chief operating officer)首席运营官 类似常务总经理</span><br><span class="line">CFO(Chief financial officer)首席财务官 类似财务总经理</span><br><span class="line">CTO(Chief technology officer)首席技术官 类似总工程师</span><br><span class="line">CIO(Chief information officer)首席信息官 主管企业信息的收集和发布</span><br></pre></td></tr></table></figure>
 
 
         </div>
