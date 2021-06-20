@@ -144,7 +144,185 @@
             
         </header>
         <div class="post-content">
-            
+            <p>using System;<br>using System.Collections;<br>using System.Collections.Generic;<br>using System.Data;<br>using System.Text;<br>using System.Linq;<br>using Power.Service.Common;<br>using System.Drawing;<br>using System.IO;<br>using Power.Global;</p>
+<p>namespace Power.DEC.StdSystem<br>{<br>    /// <summary><br>    /// 用户(PB_User) 消息申明<br>    /// </summary><br>    public partial class UserBO<br>    {<br>        #region 用户自定义代码，相应外部消息域</p>
+<pre><code>    #endregion
+}
+
+/// &lt;summary&gt;
+/// 用户(PB_User)
+/// &lt;/summary&gt;
+public partial class UserBO&lt;TBusiness&gt;
+{
+    #region 响应内部事件
+
+    #endregion
+
+    #region 用户自定义代码
+
+    public string CreateSign(string userId)
+    {
+        try
+        {
+            Power.IBaseCore.ISession session = null;
+            //获取当前用户签章
+
+            //查找HumanSign主键(Actived=&apos;1&apos;)
+            Power.Business.IBusinessList bbsSign = Power.Business.BusinessFactory.CreateBusinessOperate(&quot;HumanSign&quot;).FindAll(&quot;Actived=&apos;1&apos; and HumanId=&apos;&quot; + userId + &quot;&apos;&quot;, &quot;&quot;, &quot;&quot;, 0, 0, Power.Business.SearchFlag.IgnoreRight);
+            if (bbsSign.Count &lt;= 0) { return &quot;0&quot;; }
+            string humanSignId = Convert.ToString(bbsSign[0][&quot;Id&quot;]);
+            //查找HumanSignDocFile主键
+            string strSql = &quot; select Id,CONCAT(Name,FileExt)as FileName from pb_docfiles where BOKeyWord = &apos;HumanSign&apos; and FolderId=&apos;&quot; + humanSignId + &quot;&apos;&quot;;
+            DataTable dtSignDocFile = DBHelper.QuerySQL(strSql);
+            if (dtSignDocFile.Rows.Count &lt;= 0) { return &quot;0&quot;; }
+            string signDocFileId = Convert.ToString(dtSignDocFile.Rows[0][&quot;Id&quot;]);
+            string signDocFileName = Convert.ToString(dtSignDocFile.Rows[0][&quot;FileName&quot;]);
+            //获取签章文件流
+            System.IO.MemoryStream streamSignOrig = Power.Service.Files.FileService.FileHelper.FileDownLoad(signDocFileId, session);
+            Image imgSignOrig = Image.FromStream(streamSignOrig);
+            //获取原签章宽高
+            int width = imgSignOrig.Width;
+            int height = imgSignOrig.Height;
+            //streamSignOrig.Dispose();
+            //streamSignOrig.Close();
+
+            //生成当前时间的imageDateOrig
+            string content = DateTime.Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;);
+            Image imageDateOrig = CreateImageOrig(content);
+
+            //等比缩放成原签章宽度，高度自适应
+            Image imageDateNew = MakeThumbnail(imageDateOrig, width, height, &quot;W&quot;);
+
+            //上下拼接原签章与等比缩放后的日期图片
+            int imgHeight = 0, imgWidth = 0;
+            imgWidth = width;
+            imgHeight = imgSignOrig.Height + imageDateNew.Height;
+            Bitmap joinedBitmap = new Bitmap(imgWidth, imgHeight);
+            Graphics graph = Graphics.FromImage(joinedBitmap);
+            graph.DrawImage(imgSignOrig, 0, 0, imgSignOrig.Width, imgSignOrig.Height);
+            graph.DrawImage(imageDateNew, 0, imgSignOrig.Height, imageDateNew.Width, imageDateNew.Height);
+            Image retImg = joinedBitmap;
+
+            //得到拼接后的文件流
+            MemoryStream mStream = new MemoryStream();
+            retImg.Save(mStream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            mStream.Position = 0;
+
+            //上传到服务器
+            //查找用户表User对应主键UserId
+            Power.Business.IBusinessList bbsUser = Power.Business.BusinessFactory.CreateBusinessOperate(&quot;User&quot;).FindAll(&quot;HumanId=&apos;&quot; + userId + &quot;&apos;&quot;, &quot;&quot;, &quot;&quot;, 0, 0, Power.Business.SearchFlag.IgnoreRight);
+            if (bbsUser.Count &lt;= 0) { return &quot;0&quot;; }
+            string userMainId = Convert.ToString(bbsUser[0][&quot;Id&quot;]);
+            string userCode = Convert.ToString(bbsUser[0][&quot;Code&quot;]);
+            string userName = Convert.ToString(bbsUser[0][&quot;Name&quot;]);
+            DataTable dtwut = new DataTable();
+            dtwut.Columns.Add(&quot;Name&quot;, Type.GetType(&quot;System.String&quot;));
+            dtwut.Columns.Add(&quot;Value&quot;, Type.GetType(&quot;System.String&quot;));
+            Power.Systems.ISystems.IDocFileBO docfile = Power.Service.Files.FileService.FileHelper.UploadFileAll(1, &quot;User&quot;, userMainId, &quot;SignWithDate-&quot; + userCode + &quot;&quot;, userName + content+&quot;.jpg&quot;, Convert.ToInt32(mStream.Length), &quot;00000000-0000-0000-0000-000000000000&quot;, mStream, dtwut);
+            return docfile[&quot;Id&quot;].ToString();
+        }
+        catch(Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 文本转图片
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;text&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public Image CreateImageOrig(string text)
+    {
+        string content = text;
+        Bitmap image = new Bitmap((int)Math.Ceiling((content.Length * 18.0)), 30);
+        Graphics g = Graphics.FromImage(image);
+        //清空图片背景颜色
+        g.Clear(Color.White);
+        Font font = new Font(&quot;Arial&quot;, 15.5f, (FontStyle.Bold));
+        System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(new Rectangle(0, 0, image.Width, image.Height), Color.Black, Color.Black, 1.2f, true);
+        g.DrawString(content, font, brush, image.Width / 5, 2);
+        return image;
+    }
+
+    /// &lt;summary&gt;
+    /// 等比缩放
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;origImage&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;width&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;height&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;mode&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public Image MakeThumbnail(Image origImage, int width, int height, string mode)
+    {
+        System.Drawing.Image originalImage = origImage;
+        int towidth = width;
+        int toheight = height;
+        int x = 0;
+        int y = 0;
+        int ow = originalImage.Width;
+        int oh = originalImage.Height;
+        switch (mode)
+        {
+            case &quot;HW&quot;:  //指定高宽缩放（可能变形）                
+                break;
+            case &quot;W&quot;:   //指定宽，高按比例                    
+                toheight = originalImage.Height * width / originalImage.Width;
+                break;
+            case &quot;H&quot;:   //指定高，宽按比例
+                towidth = originalImage.Width * height / originalImage.Height;
+                break;
+            case &quot;Cut&quot;: //指定高宽裁减（不变形）                
+                if ((double)originalImage.Width / (double)originalImage.Height &gt; (double)towidth / (double)toheight)
+                {
+                    oh = originalImage.Height;
+                    ow = originalImage.Height * towidth / toheight;
+                    y = 0;
+                    x = (originalImage.Width - ow) / 2;
+                }
+                else
+                {
+                    ow = originalImage.Width;
+                    oh = originalImage.Width * height / towidth;
+                    x = 0;
+                    y = (originalImage.Height - oh) / 2;
+                }
+                break;
+            default:
+                break;
+        }
+        //新建一个bmp图片
+        System.Drawing.Image bitmap = new System.Drawing.Bitmap(towidth, toheight);
+        //新建一个画板
+        System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(bitmap);
+        //设置高质量插值法
+        g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
+        //设置高质量,低速度呈现平滑程度
+        g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+        //清空画布并以透明背景色填充
+        g.Clear(System.Drawing.Color.Transparent);
+        //在指定位置并且按指定大小绘制原图片的指定部分
+        g.DrawImage(originalImage, new System.Drawing.Rectangle(0, 0, towidth, toheight), new System.Drawing.Rectangle(x, y, ow, oh), System.Drawing.GraphicsUnit.Pixel);
+        try
+        {
+            Image img = bitmap;
+            return img;
+        }
+        catch (System.Exception e)
+        {
+            throw e;
+        }
+        finally
+        {
+            originalImage.Dispose();
+            //bitmap.Dispose();
+            g.Dispose();
+        }
+    }
+    #endregion
+
+}</code></pre><p>}</p>
+
         </div>
 
         
